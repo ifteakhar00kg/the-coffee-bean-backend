@@ -1,0 +1,46 @@
+# ============================================
+# PostgreSQL - default configuration.
+# Create the database first (see README for exact commands):
+#   CREATE DATABASE cbtldb;
+# ============================================
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/cbtl_db
+    driver-class-name: org.postgresql.Driver
+    username: ${DB_USERNAME:postgres}
+    password: ${DB_PASSWORD:424484}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: true
+        # PostgreSQLDialect explicitly mention করার প্রয়োজন নেই Hibernate নিজেই সিলেক্ট করে,
+        # তবে আপনার আগের কনফিগারেশন অনুযায়ী প্লেসহোল্ডার হিসেবে রাখা হলো।
+
+gemini:
+  api-key: ${GEMINI_API_KEY}
+  model: ${GEMINI_MODEL:gemini-2.5-flash}
+
+server:
+  port: 8085
+
+# ============================================
+# LOCAL/QUICK TEST FALLBACK: H2 in-memory DB, zero setup.
+# Swap the "spring:" block above for this one if you just want to
+# run the app without a real Postgres instance up.
+# ============================================
+# spring:
+#   datasource:
+#     url: jdbc:h2:mem:cbtldb;DB_CLOSE_DELAY=-1
+#     driver-class-name: org.h2.Driver
+#     username: sa
+#     password:
+#   h2:
+#     console:
+#       enabled: true
+#       path: /h2-console
+#   jpa:
+#     hibernate:
+#       ddl-auto: create-drop
