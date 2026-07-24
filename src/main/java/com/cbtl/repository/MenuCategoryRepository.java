@@ -1,7 +1,7 @@
 package com.cbtl.repository;
 
 import com.cbtl.model.MenuCategory;
-import com.cbtl.model.MenuGroup;
+import com.cbtl.model.enums.MenuGroup;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.cbtl.controller;
+package com.cbtl.exception;
 
 import jakarta.persistence.EntityNotFoundException;
 import org.springframework.http.HttpStatus;

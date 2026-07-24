@@ -1,5 +1,6 @@
 package com.cbtl.model;
 
+import com.cbtl.model.enums.ReservationStatus;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;

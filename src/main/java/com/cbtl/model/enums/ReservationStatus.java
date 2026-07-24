@@ -1,4 +1,4 @@
-package com.cbtl.model;
+package com.cbtl.model.enums;
 
 public enum ReservationStatus {
     PENDING,

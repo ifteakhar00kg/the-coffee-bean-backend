@@ -3,7 +3,7 @@ package com.cbtl.service;
 import com.cbtl.dto.MenuCategoryDto;
 import com.cbtl.dto.MenuItemDto;
 import com.cbtl.model.MenuCategory;
-import com.cbtl.model.MenuGroup;
+import com.cbtl.model.enums.MenuGroup;
 import com.cbtl.model.MenuItem;
 import com.cbtl.repository.MenuCategoryRepository;
 import com.cbtl.repository.MenuItemRepository;

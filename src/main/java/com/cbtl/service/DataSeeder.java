@@ -1,7 +1,7 @@
 package com.cbtl.service;
 
 import com.cbtl.model.MenuCategory;
-import com.cbtl.model.MenuGroup;
+import com.cbtl.model.enums.MenuGroup;
 import com.cbtl.model.MenuItem;
 import com.cbtl.repository.MenuCategoryRepository;
 import com.cbtl.repository.MenuItemRepository;
@@ -22,7 +22,7 @@ public class DataSeeder implements CommandLineRunner {
     @Override
     public void run(String... args) {
         if (categoryRepo.count() > 0) {
-            return; // ডাটাবেজে ডেটা অলরেডি থাকলে স্কিপ করবে
+            return;
         }
         seedDrinks();
         seedFood();

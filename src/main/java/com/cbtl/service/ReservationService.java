@@ -3,14 +3,13 @@ package com.cbtl.service;
 import com.cbtl.dto.ReservationRequestDto;
 import com.cbtl.dto.ReservationResponseDto;
 import com.cbtl.model.Reservation;
-import com.cbtl.model.ReservationStatus;
+import com.cbtl.model.enums.ReservationStatus;
 import com.cbtl.repository.ReservationRepository;
 import jakarta.persistence.EntityNotFoundException;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.time.LocalTime;
 import java.util.List;
 
 @Service
